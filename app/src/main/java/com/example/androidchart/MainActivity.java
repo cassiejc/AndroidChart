@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;
@@ -11,10 +12,17 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.PieData;
 
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+//    MqttClient client;
+//    TextView tv;
     BarChart bc;
+//    ArrayList<BarEntry> temperatureData = new ArrayList<>();
+//    ArrayList<BarEntry> humidityData = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
